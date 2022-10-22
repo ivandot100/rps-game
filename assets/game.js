@@ -115,24 +115,23 @@ function checkScore()
 {
   if (playerScore == 5)
   {
-    alert("You Won The Game!");
-    playerScore = 0; // Will Reset The Score
-    cpuScore = 0; // Will Reset The Score
-    playerMoveShow.innerHTML = (" ");
-    cpuMoveShow.innerHTML = (" ");
-    moveResult.textContent = (" ");
-    getPlayerScore.textContent = `Player Score: ${playerScore}`;
-    getCpuScore.textContent = `CPU Score: ${cpuScore}`;
+    alert("You won the game")
+    resetGame();
   }
   else if (cpuScore == 5)
   {
-    alert("You Lost The Game to a Computer!");
-    playerScore = 0; // Will Reset The Score
-    cpuScore = 0; // Will Reset The Score
-    playerMoveShow.innerHTML = (" ");
-    cpuMoveShow.innerHTML = (" ");
-    moveResult.textContent = (" ");
-    getPlayerScore.textContent = `Player Score: ${playerScore}`;
-    getCpuScore.textContent = `CPU Score: ${cpuScore}`;
+    alert("You lost the game")
+    resetGame();
   }
+}
+
+function resetGame()
+{
+  playerScore = 0;
+  cpuScore = 0;
+  playerMoveShow.innerHTML = (" ");
+  cpuMoveShow.innerHTML = (" ");
+  moveResult.textContent = (" ");
+  getPlayerScore.textContent = `Player Score: ${playerScore}`;
+  getCpuScore.textContent = `CPU Score: ${cpuScore}`;
 }
