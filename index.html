@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+  <body>
+    <header>
+      <div>ROCK-PAPER-SCISSORS</div>
+    </header>
+    <div class="players-scoring-container">
+      <div id="player-score">Player Score: 0</div>
+      <div id="result"></div>
+      <div id="cpu-score">CPU Score: 0</div>
+    </div>
+    <div class="player-versus-cpu-select-container">
+      <div class="player-select-container">
+        <h1>YOU</h1>
+        <div id="player-select"></div>
+      </div>
+      <div class="cpu-select-container">
+        <h1>CPU</h1>
+        <div id="cpu-select"></div>
+      </div>
+    </div>
+    <div class="player-select-move-container">
+      <button class="player-select-move" onclick="playerSelectRock()">✊</button>
+      <button class="player-select-move" onclick="playerSelectPaper()">✋</button>
+      <button class="player-select-move" onclick="playerSelectScissors()">✌️</button>
+    </div>
+    <footer>
+      <div> &#169; Justine Ivan Gueco / IvanDot100 (2022)</div>
+    </footer>
+  </body>
+  <script src="./assets/game.js"></script>
+</html>
